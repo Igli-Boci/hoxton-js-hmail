@@ -1,5 +1,18 @@
 import './style.css'
 
+type Email = {
+  from: string
+  header: string
+  content: string
+  emailAddress: string
+  img: string
+  read: boolean
+}
+
+type State = {
+  emails: Email[]
+}
+
 const state = {
   emails: [
     {
@@ -30,6 +43,5 @@ const state = {
       img: 'assets/gov.jpg',
       read: false
     }
-    // feel free to add more emails here
   ]
 }
